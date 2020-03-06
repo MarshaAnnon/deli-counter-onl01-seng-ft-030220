@@ -11,7 +11,7 @@ def line(katz_deli)
     puts message.join(" ")
 end
 
-  def take_a_number(array, name)
-  array.push(name)
-  puts "Welcome, #{name}. You are number #{array.index+1} in line."
-end
+def take_a_number(array,customer)
+array.push(customer)
+puts "Welcome, #{customer}. You are number #{array.length} in line."
+end 
