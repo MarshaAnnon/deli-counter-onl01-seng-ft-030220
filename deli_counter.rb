@@ -13,7 +13,7 @@ end
 
 def take_a_number(katz_deli, names)
   katz_deli.each_with_index do |index, name|
-    katz_deli.push("#{index}. #{name}")
+    katz_deli << "#{index+1}. #{name}"
   end
   if katz_deli.size + 0
     puts "The line is: #{katz_deli.join(" ")}"
