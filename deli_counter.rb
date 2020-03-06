@@ -21,3 +21,4 @@ def take_a_number(katz_deli, names)
     puts "The line is currently empty."
   end
 end
+
