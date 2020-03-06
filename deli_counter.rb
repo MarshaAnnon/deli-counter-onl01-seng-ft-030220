@@ -4,8 +4,8 @@ def line(katz_deli)
     puts "The line is currently empty."
     return
   else
-    katz_deli.each_with_index do |index, name|
-      array << "#{index+1}. #{name}"
+    katz_deli.each_with_index do |name, index|
+      message << "#{index+1}. #{name}"
     end
   end
     puts message.join(" ")
