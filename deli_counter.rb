@@ -1,5 +1,5 @@
 def line(katz_deli)
-  array = ["The line is currently:"]
+  message = ["The line is currently:"]
   if katz_deli.empty?
     puts "The line is currently empty."
   else
@@ -7,8 +7,9 @@ def line(katz_deli)
       array << "#{index+1}. #{name}"
     end
   end
-    puts array.join(" ")
+    puts message.join(" ")
 end
+
 
 def take_a_number(katz_deli, names)
   katz_deli.each_with_index do |index, name|
