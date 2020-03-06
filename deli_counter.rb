@@ -11,13 +11,7 @@ def line(katz_deli)
     puts message.join(" ")
 end
 
-def take_a_number(katz_deli, names)
-  katz_deli.each_with_index do |index, name|
-    katz_deli << "#{index+1}. #{name}"
-  end
-  if katz_deli.size >=1
-    puts "The line is: #{katz_deli.join(" ")}"
-  else
-    puts "The line is currently empty."
-  end
+  def take_a_number(array, name)
+  array.push(name)
+  puts "Welcome, #{name}. You are number #{array.index+1} in line."
 end
